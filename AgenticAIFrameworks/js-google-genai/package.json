@@ -1,0 +1,30 @@
+{
+  "name": "todo-agent-google-genai",
+  "version": "1.0.0",
+  "description": "A raw implementation of an agentic AI todo manager using Google's Generative AI SDK",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsx --env-file=.env main.ts",
+    "example:request-response": "tsx --env-file=.env request-response.ts",
+    "example:tool-call": "tsx --env-file=.env simple-tool-call.ts"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "todo",
+    "google-genai",
+    "gemini"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
+

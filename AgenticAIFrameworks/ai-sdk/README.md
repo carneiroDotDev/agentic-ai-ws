@@ -9,7 +9,10 @@ A simple agentic AI application built with the Vercel AI SDK that demonstrates t
 - **Smart File Handling**: Automatically adds `.md` extension - just say "shopping-list"
 - **Auto Task Formatting**: "add do homework" → "- [ ] Do homework" 
 - **Task Operations**: Complete, delete, or update tasks with simple commands
-- **Verbose Tool Logging**: See detailed information about every tool call including call number, tool name, and full response
+- **Verbose Tool Logging**: See detailed information about every tool call including:
+  - 📤 Tool Request (parameters sent to the tool)
+  - 📥 Tool Response (result from the tool)
+  - 💭 LLM Processing (how the LLM processes the results)
 - **Real-time Action Indicators**: Visual feedback with emoji indicators (📝 📖 🗑️ ✅ ❌)
 - **File-based Storage**: All todos stored in markdown files in a sandboxed `todos` folder
 - **Agent Loop**: Demonstrates how AI agents can use tools to accomplish tasks
@@ -101,14 +104,24 @@ Once the agent is running, you can interact with it naturally. The agent is smar
 📌 Tool Name: writeFile
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+📤 Tool Request:
+{
+  "filePath": "GDG-Cloud-Munich.md",
+  "content": "# GDG-Cloud-Munich\n\n- [ ] Event on the 19th November"
+}
+
 📝 Writing to file: GDG-Cloud-Munich.md
 ✅ Successfully wrote to GDG-Cloud-Munich.md
-📊 Tool Response:
+
+📥 Tool Response:
 {
   "success": true,
   "message": "File written successfully: GDG-Cloud-Munich.md",
   "path": "GDG-Cloud-Munich.md"
 }
+
+💭 LLM Processing:
+   File created successfully with the task.
 
 🤖 Agent: I've created a file called GDG-Cloud-Munich.md and added the task "Event on the 19th November" to it.
 
@@ -121,9 +134,15 @@ Once the agent is running, you can interact with it naturally. The agent is smar
 📌 Tool Name: readFile
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+📤 Tool Request:
+{
+  "filePath": "GDG-Cloud-Munich.md"
+}
+
 📖 Reading file: GDG-Cloud-Munich.md
 ✅ Successfully read GDG-Cloud-Munich.md
-📊 Tool Response:
+
+📥 Tool Response:
 {
   "success": true,
   "content": "# GDG-Cloud-Munich\n\n- [ ] Event on the 19th November",
@@ -131,19 +150,32 @@ Once the agent is running, you can interact with it naturally. The agent is smar
   "path": "GDG-Cloud-Munich.md"
 }
 
+💭 LLM Processing:
+   I see the current content. Now adding the new task.
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔧 Tool Call #2
 📌 Tool Name: writeFile
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+📤 Tool Request:
+{
+  "filePath": "GDG-Cloud-Munich.md",
+  "content": "# GDG-Cloud-Munich\n\n- [ ] Event on the 19th November\n- [ ] Prepare presentation"
+}
+
 📝 Writing to file: GDG-Cloud-Munich.md
 ✅ Successfully wrote to GDG-Cloud-Munich.md
-📊 Tool Response:
+
+📥 Tool Response:
 {
   "success": true,
   "message": "File written successfully: GDG-Cloud-Munich.md",
   "path": "GDG-Cloud-Munich.md"
 }
+
+💭 LLM Processing:
+   Task added successfully!
 
 🤖 Agent: I've added "Prepare presentation" to your GDG-Cloud-Munich list!
 
@@ -297,7 +329,9 @@ Edit the `systemPrompt` constant in `main.ts` to change the agent's behavior.
 - The agent can handle multiple operations in a single request
 - Every tool call is logged verbosely with detailed information:
   - 🔧 Tool call number and name
-  - 📊 Full JSON response from each tool
+  - 📤 **Tool Request**: Parameters sent to the tool
+  - 📥 **Tool Response**: Full JSON response from each tool
+  - 💭 **LLM Processing**: How the LLM processes results between tool calls
   - 📝 Writing to file indicator
   - 📖 Reading file indicator
   - 🗑️ Deleting file indicator
