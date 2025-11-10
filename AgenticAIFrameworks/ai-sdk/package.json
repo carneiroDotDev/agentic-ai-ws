@@ -1,0 +1,32 @@
+{
+  "name": "todo-agent",
+  "version": "1.0.0",
+  "description": "A simple agentic AI todo list manager using AI SDK",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsx --env-file=.env main.ts"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "todo",
+    "ai-sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.0.5",
+    "@ai-sdk/google": "^1.0.5",
+    "@ai-sdk/openai": "^1.0.5",
+    "ai": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
+
