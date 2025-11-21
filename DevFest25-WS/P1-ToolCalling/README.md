@@ -73,8 +73,16 @@ The UI will be available at `http://localhost:8000`
 
 ## Try It Out
 
-Example prompt:
+Example prompts:
 ```
-Plan a relaxing and artsy day trip near Munich, Germany. Keep it affordable!
+Plan a relaxing and artsy day trip in Munich, Germany. Keep it affordable!
+```
+
+```
+I want an adventurous day exploring Bavaria. What should I do?
+```
+
+```
+Suggest a food-focused day trip in Rio de Janeiro with local cuisine!
 ```
 
