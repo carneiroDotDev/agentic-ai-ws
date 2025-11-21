@@ -1,0 +1,11 @@
+[project]
+name = "p1-toolcalling"
+version = "0.1.0"
+description = "Part 1: Your First Agent - The Day Trip Genie"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-adk>=1.19.0",
+    "google-generativeai",
+    "python-dotenv",
+]
