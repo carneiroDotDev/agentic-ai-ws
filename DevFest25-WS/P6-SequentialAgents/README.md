@@ -95,3 +95,18 @@ No manual data extraction needed - ADK handles the plumbing!
 - Clean, declarative workflow definition
 - Easy to read and maintain
 
+## Building on Part 5
+
+In [Part 5](../P5-RouterAgent/), you built a router that delegates to specialists. Now you're using `SequentialAgent` to chain agents together in multi-step workflows where each agent's output feeds into the next!
+
+## What You Learned
+
+✅ SequentialAgent for multi-step workflows  
+✅ Shared state for data passing  
+✅ Using `output_key` to save results  
+✅ Declarative agent composition  
+
+## Next Steps
+
+Ready for iterative workflows? In **[Part 7: Loop Agents](../P7-LoopAgents/)**, you'll learn to build agents that critique and refine their work through iterative loops!
+

@@ -38,10 +38,30 @@ Get your API key here: https://codelabs.developers.google.com/onramp/instruction
   - Build multi-day itineraries progressively
   - Adapt to user feedback across conversation turns
 
-- **P5-SequentialAgents**: Sequential Workflows - Chaining Agents 🔗
+- **P5-RouterAgent**: Router Agent - Intelligent Delegation 🧠
+  - Build a router that analyzes and classifies requests
+  - Delegate to specialist agents automatically
+  - Foundation for complex multi-agent systems
+
+- **P6-SequentialAgents**: Sequential Workflows - Chaining Agents 🔗
   - Use SequentialAgent to chain agents together
   - Pass data between agents via shared state
   - Build multi-step workflows declaratively
+
+- **P7-LoopAgents**: Iterative Refinement with LoopAgent 🔁
+  - Use LoopAgent for iterative improvement
+  - Build plan-critique-refine cycles
+  - Handle constraints through iteration
+
+- **P8-ParallelAgents**: Parallel Power with ParallelAgent ⚡
+  - Run multiple agents simultaneously
+  - Maximize efficiency with concurrent execution
+  - Synthesize results from parallel tasks
+
+- **P9-Deployment**: Deploying to Cloud Run ☁️
+  - Deploy agents to production
+  - Google Cloud Run setup
+  - Scaling and monitoring
 
 ## Structure
 
@@ -53,7 +73,11 @@ DevFest25-WS/
 ├── P2-CustomTools/         # Part 2: Custom tools with external APIs
 ├── P3-AgentTeams/          # Part 3: Multi-agent systems
 ├── P4-Memory/              # Part 4: Sessions and memory
-├── P5-SequentialAgents/    # Part 5: Sequential workflows
+├── P5-RouterAgent/         # Part 5: Router agent and delegation
+├── P6-SequentialAgents/    # Part 6: Sequential workflows
+├── P7-LoopAgents/          # Part 7: Iterative refinement
+├── P8-ParallelAgents/      # Part 8: Parallel execution
+├── P9-Deployment/          # Part 9: Cloud deployment
 └── source/                 # Original workshop notebooks
 ```
 

@@ -126,3 +126,18 @@ The key is the **docstring** - ADK uses it to teach the agent when and how to us
 
 **Note**: For your own projects, you can integrate any weather API (OpenWeatherMap, WeatherAPI, etc.) by modifying the `get_live_weather_forecast()` function.
 
+## Building on Part 1
+
+In [Part 1](../P1-ToolCalling/), you learned to use built-in tools like `google_search`. Now you've created your own custom tool by writing a Python function and letting ADK expose it to your agent!
+
+## What You Learned
+
+✅ Creating custom tools from Python functions  
+✅ Integrating external APIs  
+✅ Using docstrings to teach agents about tools  
+✅ Handling real-time data in agent decisions  
+
+## Next Steps
+
+Ready to coordinate multiple agents? In **[Part 3: Agent Teams](../P3-AgentTeams/)**, you'll learn the Agent-as-a-Tool pattern where agents can delegate work to other specialist agents!
+

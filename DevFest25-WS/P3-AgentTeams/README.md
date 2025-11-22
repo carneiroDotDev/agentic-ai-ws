@@ -71,3 +71,18 @@ Watch the request flow through the agent team!
 
 Each agent has a clear role and can be developed independently.
 
+## Building on Part 2
+
+In [Part 2](../P2-CustomTools/), you created custom tools from Python functions. Now you're taking it further - using `AgentTool` to wrap entire agents as tools, enabling agent-to-agent delegation!
+
+## What You Learned
+
+✅ Agent-as-a-Tool pattern (`AgentTool`)  
+✅ Building multi-agent hierarchies  
+✅ Delegation and specialization  
+✅ Coordinating multiple experts  
+
+## Next Steps
+
+Ready to add memory? In **[Part 4: Memory](../P4-Memory/)**, you'll learn how to build agents that remember conversation history and maintain context across multiple interactions!
+

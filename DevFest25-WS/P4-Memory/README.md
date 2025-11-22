@@ -85,3 +85,18 @@ Want to see what happens without memory? Open a **new chat window** (new session
 
 This shows why sessions matter for complex, multi-turn interactions.
 
+## Building on Part 3
+
+In [Part 3](../P3-AgentTeams/), you built multi-agent teams with delegation. Now you've added memory, enabling your agents to maintain context across multiple conversation turns.
+
+## What You Learned
+
+✅ Session management for memory  
+✅ Multi-turn conversations  
+✅ Context preservation across interactions  
+✅ Progressive planning with feedback  
+
+## Next Steps
+
+Ready for advanced orchestration? In **[Part 5: Router Agent](../P5-RouterAgent/)**, you'll build an intelligent router that analyzes requests and delegates them to the right specialist agent automatically!
+

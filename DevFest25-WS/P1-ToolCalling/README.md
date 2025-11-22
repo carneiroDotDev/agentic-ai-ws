@@ -86,3 +86,14 @@ I want an adventurous day exploring Bavaria. What should I do?
 Suggest a food-focused day trip in Rio de Janeiro with local cuisine!
 ```
 
+## What You Learned
+
+✅ Creating your first ADK agent  
+✅ Using built-in tools (`google_search`)  
+✅ Setting up environment variables  
+✅ Running agents locally and with Docker  
+
+## Next Steps
+
+Ready for more? In **[Part 2: Custom Tools](../P2-CustomTools/)**, you'll learn to create your own tools and integrate external APIs like the National Weather Service!
+
