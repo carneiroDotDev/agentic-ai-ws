@@ -2,6 +2,8 @@
 
 This workshop teaches you how to build AI agents using Google's Agent Development Kit (ADK).
 
+![ADK Learning Roadmap](ADKLearningRoadmap.png)
+
 ## Quick Setup
 
 All workshop parts share the same API configuration:
@@ -26,7 +28,12 @@ Get your API key here: https://codelabs.developers.google.com/onramp/instruction
   - Integrate external APIs (Weather Service)
   - Use real-time data in recommendations
 
-- **P3-Memory**: Agent with Memory - The Adaptive Planner 🗺️
+- **P3-AgentTeams**: Building Agent Teams - The Specialist Pattern 👥
+  - Build multi-agent systems
+  - Use Agent-as-a-Tool pattern
+  - Delegate tasks to specialist agents
+
+- **P4-Memory**: Agent with Memory - The Adaptive Planner 🗺️
   - Understand sessions and conversational memory
   - Build multi-day itineraries progressively
   - Adapt to user feedback across conversation turns
@@ -39,7 +46,9 @@ DevFest25-WS/
 ├── env.example             # Template for environment variables
 ├── P1-ToolCalling/         # Part 1: Basic agent with tools
 ├── P2-CustomTools/         # Part 2: Custom tools with external APIs
-├── P3-Memory/              # Part 3: Sessions and memory
+├── P3-AgentTeams/          # Part 3: Multi-agent systems
+├── P4-Memory/              # Part 4: Sessions and memory
 └── source/                 # Original workshop notebooks
 ```
 
+**Note:** This workshop code is inspired by and adapted from the notebooks in the `source/` folder.

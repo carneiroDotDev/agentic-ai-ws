@@ -1,7 +1,7 @@
 [project]
-name = "p3-memory"
+name = "p3-agentteams"
 version = "0.1.0"
-description = "Part 3: Agent with Memory - The Adaptive Planner"
+description = "Part 3: Building Agent Teams - The Specialist Pattern"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

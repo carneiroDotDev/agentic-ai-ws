@@ -1,4 +1,4 @@
-# Part 3: Agent with Memory - The Adaptive Planner 🗺️
+# Part 4: Agent with Memory - The Adaptive Planner 🗺️
 
 An AI agent that demonstrates sessions and conversational memory. This planner builds multi-day travel itineraries progressively and adapts to your feedback across conversation turns.
 
