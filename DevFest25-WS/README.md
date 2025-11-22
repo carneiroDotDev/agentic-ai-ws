@@ -38,6 +38,11 @@ Get your API key here: https://codelabs.developers.google.com/onramp/instruction
   - Build multi-day itineraries progressively
   - Adapt to user feedback across conversation turns
 
+- **P5-SequentialAgents**: Sequential Workflows - Chaining Agents 🔗
+  - Use SequentialAgent to chain agents together
+  - Pass data between agents via shared state
+  - Build multi-step workflows declaratively
+
 ## Structure
 
 ```
@@ -48,6 +53,7 @@ DevFest25-WS/
 ├── P2-CustomTools/         # Part 2: Custom tools with external APIs
 ├── P3-AgentTeams/          # Part 3: Multi-agent systems
 ├── P4-Memory/              # Part 4: Sessions and memory
+├── P5-SequentialAgents/    # Part 5: Sequential workflows
 └── source/                 # Original workshop notebooks
 ```
 

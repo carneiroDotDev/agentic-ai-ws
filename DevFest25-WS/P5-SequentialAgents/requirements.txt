@@ -1,0 +1,4 @@
+google-adk>=1.19.0
+google-generativeai
+python-dotenv
+
