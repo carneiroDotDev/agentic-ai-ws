@@ -144,6 +144,15 @@ ENV/
 env.bak/
 venv.bak/
 
+# UV lock files (keep for reproducibility in workshop)
+# uv.lock
+
+# Node modules
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -175,6 +184,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# IDE
+.vscode/
+.idea/
+
 # Abstra
 # Abstra is an AI-powered process automation framework.
 # Ignore directories containing user credentials, local state, and settings.
@@ -205,3 +218,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
