@@ -6,6 +6,8 @@ A simple AI agent that generates spontaneous full-day itineraries based on mood,
 
 - Python 3.13+
 - Google API Key ([Get one here](https://codelabs.developers.google.com/onramp/instructions#1))
+# recommend to install uv for the following steps
+- (Optional) Install uv: `curl -LsSf https://astral.sh/uv/install.sh | sh` (for Linux)
 
 ## Setup API Key
 
@@ -27,6 +29,9 @@ export GOOGLE_API_KEY='your-api-key-here'
 ## Run Locally
 
 ```bash
+# Assume we are still at the `DevFest25-WS` directory
+cd P1-ToolCalling
+
 # Create virtual environment
 uv venv
 
