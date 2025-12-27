@@ -17,8 +17,8 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GENERATIVE_AI_API_KEY);
 // Step 1 - Define a simple greeting tool
 const tools: FunctionDeclaration[] = [
   {
-    name: "respondWithHow",
-    description: 'Responds to a greeting "Hey!" with "Row!"',
+    name: "respondWhereAmI",
+    description: 'Responds to a question "Where am I?" with "DevFest Armenia"',
     parameters: {
       type: SchemaType.OBJECT,
       properties: {},
@@ -28,10 +28,10 @@ const tools: FunctionDeclaration[] = [
 
 // Step 2 - Execute the tool function
 function executeTool(toolName: string): any {
-  if (toolName === "respondWithHow") {
+  if (toolName === "respondWhereAmI") {
     return {
       success: true,
-      message: "Row!",
+      message: "DevFest Armenia",
     };
   }
   return { error: "Unknown tool" };
@@ -46,9 +46,9 @@ async function simpleToolCall() {
 
   const chat = model.startChat({ history: [] });
 
-  const userMessage = "Hey!";
+  const userMessage = "Where am I?";
   const systemPrompt =
-    'You are a friendly assistant. When someone says "Hey!", you must use the respondWithHow tool to respond.';
+    'You are a friendly assistant. When someone says "Hey!", you must use the respondWhereAmI tool to respond.';
 
   console.log("📤 REQUEST OBJECT:");
   console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
